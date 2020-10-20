@@ -26,11 +26,13 @@ const Hosts = () => {
     return (
         <Wrapper>
             <Heading>Your Hosts</Heading>
+            <HostsWrapper>
             {data.allGraphCmsHost.edges.map((edge) => {
                 return(
                     <HostCard {...edge.node}/>
                 )
             })}
+            </HostsWrapper>
         </Wrapper>
     )
 }
@@ -39,14 +41,19 @@ export default Hosts
 
 
 const Wrapper = styled.div`
-    height: 100vh;
     background-color: #141414;
 `
 
 const Heading = styled.div`
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Indie Flower", sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+`
+
+const HostsWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 `
