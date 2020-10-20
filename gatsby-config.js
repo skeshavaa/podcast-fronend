@@ -27,6 +27,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-graphcms',
+        options: {
+          // Your GraphCMS API endpoint. Available from your project settings.
+          endpoint: 'https://api-eu-central-1.graphcms.com/v2/ckgh81ljkezzx01xpee0k1uns/master',
+          // A PAT (Permanent Auth Token) for your project. Required if your project is not available publicly, or you want to scope access to a specific content stage (i.e. draft content).
+          token: process.env.GRAPHCMS_TOKEN
+        },
+    },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

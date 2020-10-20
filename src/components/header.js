@@ -5,8 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `black`,
     }}
   >
     <div
@@ -22,12 +21,15 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontFamily: 'Comfortaa'
           }}
         >
-          {siteTitle}
+          Classroom Backseat Podcast
         </Link>
       </h1>
     </div>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;570;600;700&display=swap" rel="stylesheet"/>
+
   </header>
 )
 
