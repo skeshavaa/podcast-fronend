@@ -5,10 +5,10 @@ export const HostCard = ({ name, profilePicture, desc }) => {
     return (
         <Wrapper>
             <ProfilePicture src={profilePicture.url}/>
-            <TextWrapper>
+            {/* <TextWrapper>
                 <Name>{name}</Name>
                 <Desc>{desc}</Desc>
-            </TextWrapper>
+            </TextWrapper> */}
         </Wrapper>
     )
 }
@@ -30,6 +30,7 @@ const ProfilePicture = styled.img`
     width: 280px;
     height: 100%;
     margin: 0;
+    border-radius: 50%;
 `
 
 const Name = styled.div`

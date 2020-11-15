@@ -41,11 +41,14 @@ export default Hosts
 
 
 const Wrapper = styled.div`
-    background-color: #141414;
+  background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 `
 
 const Heading = styled.div`
-    font-family: "Indie Flower", sans-serif;
+    font-family: "Questrial", sans-serif;
     color: white;
     font-size: 45px;
     text-align: center;
